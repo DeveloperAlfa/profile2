@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Chocolate
+#e8553f
+Copy
+Wheat
+#f3e3bc
+Copy
+Dark Slate Gray
+#414048
+Copy
+Cadet Blue
+#52a5a0
+Copy
+Light Steel Blue
+#9dc3c6
+-->
+	<title>Nipun Aggarwal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css" />
+	<link rel="stylesheet" type="text/css" href="nipun.css">
+	<script type="text/javascript" src="nipun.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+</head>
+
+<body>
+	<div class="ui basic modal">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+    Hi, There
+  </div>
+  <div class="content">
+    <p>I am Nipun Aggarwal, a Developer and a Data Scientist. Are You here to Hire?</p>
+  </div>
+  <div class="actions">
+    <div class="ui red basic cancel inverted button">
+      <i class="remove icon"></i>
+      No,Just checking out!
+    </div>
+    <div class="ui green ok inverted button">
+      <i class="checkmark icon"></i>
+      Yes, found you good!
+    </div>
+  </div>
+</div>
+	<!-- Navbar -->
+<div class="ui compact inverted menu fixed">
+  <a class="item" href="#Namelogo">
+    <img src="images/1.png" class="ui image mini">
+    Nipun Aggarwal
+  </a>
+  <a class="item" href="#Skills">
+    <i class="trophy icon"></i>
+    Profile
+  </a>
+  <a class="item" href="#Resume">
+    <i class="handshake icon"></i>
+    Resume
+  </a>
+  <a class="item" href="#Projects">
+    <i class="video play icon"></i>
+    Projects
+  </a>
+</div>
+
+	<!-- Name and Logo -->
+	<div class="page" id="Namelogo">
+		<h2 align="center">Hi, I'm Nipun Aggarwal</h2>
+
+	
+	<div class="ui fixed centered black card" style="width:100%">
+		<!-- Two Image UpDown -->
+		<div class="ui move up reveal" style="display:inline-block;">
+		  <div class="visible content">
+		    <img src="images/2.png" class="ui medium image">
+		  </div>
+		  <div class="hidden content">
+		    <img src="images/1.png" class="ui medium image">
+		  </div>
+		   <div class="image">
+    		<img src="images/cover.jpg" class="medium" style="width:100%; max-height: 300px;object-fit:none;object-position: bottom;">
+  		   </div>
+		</div>
+		  <div class="content">
+		  <a class="header">Delhi Technological University</a>
+	    <div class="meta">
+	      <span class="date">Computer Engineering(Expected 2020)</span>
+	    </div>
+	    <div class="description">
+	      Android/Web Developer and Data Scientist
+	    </div>
+	  	</div>
+	  <div class="extra content">
+	    <a>
+	      <i class="user icon"></i>
+	      Available for Hire!
+	    </a>
+</div>
+</div>
+
+</div>
+
+	<!-- Skills and Endorsements -->
+	<div class="container page" id="Skills">
+		<div class="ui three stackable cards">
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/elliot.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/2.png">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/jenny.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/veronika.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/stevie.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/steve.jpg">
+    </div>
+  </div>
+</div>
+	</div>
+
+	<!-- Resume -->
+	<div class="container page" id="Resume">
+		
+	</div>
+
+	<!-- Projects -->
+	<div class="container page" id="Projects">
+		
+	</div>
+<script type="text/javascript">
+	 $(document).ready( function() {
+     $('.ui.basic.modal') .on('click', modal('show'));
+     $(window).scroll(function () {
+
+       
+        $('.page').each(function (i) {
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object) {
+
+                $(this).animate({
+                    'opacity': '1'
+                }, 500);
+
+            }
+
+        });
+
+    });
+ });
+	
+	
+</script>
+
+
+
+
+
+
+</body>
+</html>
